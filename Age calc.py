@@ -16,3 +16,11 @@ Label(text="NAME", font=23).place(x=140, y=250)
 Label(text="YEAR", font=23).place(x=140, y=300)
 Label(text="MONTH", font=23).place(x=140, y=350)
 Label(text="DAY", font=23).place(x=140, y=400)
+
+nameValue = StringVar()
+yearValue = StringVar()
+monthValue = StringVar()
+dayValue = StringVar()
+
+nameEntry = Entry(window, textvariable=nameValue, width=30, bd=3, font=20)
+nameEntry.place(x=300, y=250)
