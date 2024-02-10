@@ -17,6 +17,7 @@ Label(text="YEAR", font=23).place(x=140, y=300)
 Label(text="MONTH", font=23).place(x=140, y=350)
 Label(text="DAY", font=23).place(x=140, y=400)
 
+Heading.place(x=90, y=120)
 nameValue = StringVar()
 yearValue = StringVar()
 monthValue = StringVar()
@@ -30,3 +31,10 @@ yearEntry.place(x=300, y=300)
 
 monthEntry = Entry(window, textvariable=monthValue, width=30, bd=3, font=20)
 monthEntry.place(x=300, y=350)
+
+dayEntry = Entry(window,textvariable=dayValue, width=30, bd=3, font=20)
+dayEntry.place(x=300, y=400)
+
+Button(text="Calculate Age", font=20,bg="black", fg="white", width=15, height=2, command=calculateAge).place(x=350, y=450)
+
+window.mainloop()
