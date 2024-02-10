@@ -24,3 +24,9 @@ dayValue = StringVar()
 
 nameEntry = Entry(window, textvariable=nameValue, width=30, bd=3, font=20)
 nameEntry.place(x=300, y=250)
+
+yearEntry = Entry(window, textvariable=yearValue, width=30, bd=3, font=20)
+yearEntry.place(x=300, y=300)
+
+monthEntry = Entry(window, textvariable=monthValue, width=30, bd=3, font=20)
+monthEntry.place(x=300, y=350)
